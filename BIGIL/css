@@ -1,1 +1,35 @@
-CSS TRICKS
+👉 CSS TRICKS
+
+/* Image responsive */
+.wrapper {
+  position: relative;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+/* Image responsive */
+
+/* container */
+.container {
+	width: 800px;
+	max-width: 90%;
+}
+/* container */
+
+/* image */
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+@media \0screen {
+    img { 
+        width: auto; /* for ie 8 */
+    }
+  }
+/* image */
