@@ -1,0 +1,21 @@
+1)Default Theme:-  {{}} 
+   *Rendering Collection Page {{ Render Basic Section }}
+   *Rendering Collection Video {{ Video section 2*2 }}
+   *Rendering Collection allday {{ Image Carousel Gallery }}
+   *Rendering Collection List {{ Product Galley 3 column }}
+
+2)Ajax:- {{}}
+   #Layout none
+
+3)no-image:- {{}}
+   *Rendering Collection Page {{ Render Basic Section }}
+   *Rendering recently-viewed-products {{ Render Recently Viewed Products }}
+   *Rendering collection-footer {{ Render image Banner with text overlay }}
+
+4)test-collection-cus:- {{https://neemans.com/collections/cus-test-collection}}
+   *Rendering Collection Page {{ Render Basic Section }}
+   *Rendering Collection Video {{ Video section 2*2 }}
+   *Rendering Collection allday {{ Image Carousel Gallery }}
+   *Rendering Collection List {{ Product Galley 3 column }}
+
+

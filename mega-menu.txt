@@ -1,0 +1,183 @@
+************************************************************************************************************
+
+<nav class="navigation" aria-label="Main navigation"  data-section-id="{{ section.id }}" >
+	<ul class="horizontal-list">
+ 
+	{% for link in linklists[section.settings.menu].links %}
+		{% if link.levels == 2 and link.title contains section.blocks.settings.mecha-menu %}
+
+			<!-- if mecha menu -->
+			<li class="horizontal-list-item" data-submenu>
+				<a class="{{ link.title | downcase }}" href="{{ link.url }}">{{ link.title | escape }} &#9662;</a>
+
+				<div class="mecha-menu">
+					<div class="mecha-menu-inner">
+					{% for sub_link in link.links %}
+						<div class="mecha-menu-item mecha-menu-item-fit">
+							<a class="mecha-menu-title {{ sub_link.title | downcase }}" href="{{ sub_link.url }}">{{ sub_link.title | escape }}</a>
+							<ul class="link-list">
+								{% for sub_sub_link in sub_link.links %}
+								<li class="link-list-item">
+									<a class="{{ sub_sub_link.title | downcase }}" href="{{ sub_sub_link.url }}">{{ sub_sub_link.title | escape }}</a>
+								</li>
+								{% endfor %}
+							</ul>
+						</div>
+					{% endfor %}
+					<!-- this is where the image in the mecha menu goes-->
+						<div class="mecha-menu-item" style="width: 370px; min-width: 250px;">
+							<div class="mecha-menu-push">
+								<div class="mecha-menu-push-image-wrapper" style=" max-width: 370px;">
+
+										<img src="url">
+
+								</div>
+								<p class="heading">Example heading</p>
+								<p class="sub-heading">Example sub-heading</p>
+							</div>
+						</div>
+					
+					</div>
+				</div>
+			</li>
+			
+
+		{% elsif link.levels == 2 %}
+			<!-- if 3 level dropdown --> 
+			<li class="horizontal-list-item" data-submenu>
+				<a class="{{ link.title | downcase }}" href="{{ link.url }}">{{ link.title | escape }} &#9662;</a>
+				<div class="dropdown-menu">
+					<ul class="linklist">
+						{% for sub_link in link.links %}
+						<li class="link-list-item" data-submenu>
+							<a class="{{ sub_link.title | downcase }}" href="{{ sub_link.url }}">{{ sub_link.title | escape }}</a>
+							{% for sub_sub_link in sub_link.links %}
+							<div class="dropdown-menu">
+								<ul class="linklist">
+									<li class="link-list-item">
+										<a class="{{ sub_sub_link.title | downcase }}" href="{{ sub_sub_link.url }}">{{ sub_sub_link.title | escape }}</a>
+									</li>
+								</ul>
+							</div>
+							{% endfor %}
+						</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</li>
+
+		{% elsif link.levels == 1 %}
+
+			<!-- if dropdown menu -->
+			<li class="horizontal-list-item" data-submenu>
+				<a class="{{ link.title | downcase }}" href="{{ link.url }}">{{ link.title | escape }} &#9662;</a>
+				<div class="dropdown-menu">
+					<ul class="link-list">
+						{% for sub_link in link.links %}
+						<li class="link-list-item">
+							<a class="{{ sub_link.title | downcase }}" href="{{ sub_link.url }}">{{ sub_link.title | escape }}</a>
+						</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</li>
+
+
+		{% else %}
+			<!-- if regular menu item -->
+			<li class="horizontal-list-item">
+				<a class="{{ link.title | downcase }}" href="{{ link.url }}">{{ link.title | escape }}</a>
+			</li>
+
+		{% endif %}
+
+
+	{% endfor %}
+
+	</ul>
+</nav>
+{% schema %}
+
+{
+	"name": "Menu",
+	"settings": [
+		{
+			"type": "link_list",
+			"id": "menu",
+			"label": "Menu",
+			"default": "main-menu"
+		}
+	],
+	"max_blocks": 4,
+	"blocks": [
+		{
+			"name": "Mecha Menu",
+			"type": "mecha-menu",
+			"settings": [
+				{
+					"type": "text",
+					"id": "menu-item",
+					"label": "Menu Item",
+					"info": "Enter menu item to apply a mecha menu dropdown."
+				},
+				{
+					"type": "header",
+					"content": "IMAGE PUSH 1"
+				},
+				{
+					"type": "image_picker",
+					"id": "image_image_push_1",
+					"label": "Image"
+				},
+				{
+					"type": "text",
+					"id": "heading_image_push_1",
+					"label": "Heading"
+				},
+				{
+					"type": "text",
+					"id": "sub_heading_image_push_1",
+					"label": "Sub-heading"
+				},
+				{
+					"type": "url",
+					"id": "link_image_push_1",
+					"label": "Link"
+				},
+				{
+					"type": "header",
+					"content": "IMAGE PUSH 2"
+				},
+				{
+					"type": "image_picker",
+					"id": "image_image_push_2",
+					"label": "Image"
+				},
+				{
+					"type": "text",
+					"id": "heading_image_push_2",
+					"label": "Heading"
+				},
+				{
+					"type": "text",
+					"id": "sub_heading_image_push_2",
+					"label": "Sub-heading"
+				},
+				{
+					"type": "url",
+					"id": "link_image_push_2",
+					"label": "Link"
+				}
+			]
+		}
+	]
+}
+
+{% endschema %}
+
+**********************************************************************************
+
+
+mega menu:- https://happypoints.io/blog/how-to-add-mega-menu-in-shopify-c2-stt-80/
+
+mega menu:- https://roartheme.co/blogs/beyours/how-to-create-a-mega-menu
