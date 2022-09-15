@@ -1,0 +1,30 @@
+#####TASK SHEET#####
+
+1)Imagine-
+  Cashback emi & disclaimer for NPI {hr}
+
+﻿﻿  # URL : https://partner-relay.apple.com/en-IN/home.html #
+  # email id : vmashoka@gmail.com			  #
+  # Password : Ample@1234				  #
+
+-----------------------------------------------------------------------
+
+2)Imagine-
+  Adding iPhone 14 Series to Compare Page {hr}
+
+-----------------------------------------------------------------------
+
+2)Layers-
+  Create add to cart and customize button in Product page {1hr}
+
+  To Do = * Add button
+          * Add postion button
+          * Add Event
+ 	  * Check also on phone Design
+       
+-----------------------------------------------------------------------
+
+
+
+
+

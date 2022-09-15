@@ -1,0 +1,30 @@
+#####TASK SHEET#####
+
+2)Neemans - Email Templates 12Sep task done
+    
+    1)Order Edited {1hr} 👍
+    2)Order Cancled {0.5hr}
+    3)Order Refund {hr} 
+    4)Order Invoice {hr} 
+    5)Payment Error {hr}
+    6)Pending Payment Error {hr}
+    7)Pending Payment Success {hr}
+
+-----------------------------------------------------------------------
+
+3) Layers - Add google Tag in head of every page {1hr} 👍
+
+-----------------------------------------------------------------------
+
+4) JuicyChemistry :- Alignment Issue on live {0.5hr} 👍
+
+-----------------------------------------------------------------------
+
+5) Bankpay :- Front End JS integration {16hr}
+
+-----------------------------------------------------------------------
+
+6) Something Brewing :- Adding menus to nav bar {hr}
+   {Shopify plus:- Little muffet plus test}
+
+-----------------------------------------------------------------------

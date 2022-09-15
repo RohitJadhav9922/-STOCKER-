@@ -1,0 +1,21 @@
+#####TASK SHEET#####
+
+
+1)Layers- 12Sep task done
+    
+-----------------------------------------------------------------------
+
+2)Neemans - Email Templates
+    
+    1)Order Edited {1hr} 👍
+    2)Order Cancled {1hr}
+    3)Order Refund {1hr} 
+    4)Order Invoice {1hr} 
+    5)Payment Error {1hr}
+    6)Pending Payment Error {1hr}
+    7)Pending Payment Success {1hr}
+
+-----------------------------------------------------------------------
+
+
+

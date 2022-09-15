@@ -1,0 +1,10 @@
+#####TASK SHEET#####
+
+1) Bankpay :- Front End JS integration {16hr}
+
+-----------------------------------------------------------------------
+
+2) Something Brewing :- Adding menus to nav bar {hr}
+   {Shopify plus:- Little muffet plus test}
+
+-----------------------------------------------------------------------
